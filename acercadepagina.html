@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Compacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+    </nav>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - Página de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .about-section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .about-section h2 {
+            color: #333;
+        }
+
+        .about-section p {
+            margin: 0 0 10px;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Concesionario de Carros</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>Acerca de Nosotros</h2>
+            <img src="c:\Users\cbtis\Downloads\pagina4.jpg" alt="Imagen del concesionario">
+            <p>Bienvenido a Concesionario de Carros, donde nos dedicamos a ofrecerte los mejores vehículos de la industria. Fundada en 2005, nuestra misión es proporcionar a nuestros clientes un servicio excepcional y una experiencia de compra sin igual.</p>
+            <p>En Concesionario de Carros, contamos con una amplia gama de autos nuevos y usados, desde modelos económicos hasta vehículos de lujo. Nuestro equipo de expertos está aquí para ayudarte a encontrar el coche perfecto que se ajuste a tus necesidades y presupuesto.</p>
+            <p>Nuestra visión es ser el concesionario de autos más confiable y respetado en la región, conocido por nuestra integridad, compromiso con la calidad y atención al cliente.</p>
+            <p>Gracias por elegirnos. Estamos aquí para servirte y ayudarte a encontrar tu próximo automóvil.</p>
+        </section>
+    </div>
+</body>
+</html>
+
+ 
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slide');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Cambia de imagen cada 3 segundos
+        }
+
+        function prevSlide() {
+            slideIndex -= 2;
+            showSlides();
+        }
+
+        function nextSlide() {
+            showSlides();
+        }
+    </script>
+</body>
+</html>
+
+
+
+    <!-- Scripts -->
+  <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+</body>
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie de Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            background-color: #0f3f21;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Contenido principal de la página aquí -->
+    </div>
+    <footer>
+        <p>&copy; 2024 BERTA TEHUI. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#about">Sobre Nosotros</a> | 
+            <a href="#contact">Contacto</a> | 
+            <a href="#privacy">Política de Privacidad</a>
+        </div>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento con Logo en el Pie de Página</title>
+    <style>
+        /* Estilos básicos para el pie de página */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #989699;
+            border-top: 1px solid #ccc;
+        }
+        footer img {
+            max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <img src="c:\Users\cbtis\Downloads\LOGO.svg" alt="Logo">
+    </footer>
+</body>
+</html>
+
+
